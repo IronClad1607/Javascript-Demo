@@ -33,3 +33,10 @@ console.log(obj.k4)
 
 delete obj.k1
 console.log(obj.k1)
+
+//Array Object
+const arr = [1,2,3]
+console.log(arr)
+
+arr.push(5)
+console.log(arr)
