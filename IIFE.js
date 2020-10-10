@@ -1,7 +1,5 @@
 //IIFE = Immediately Invoked Function Expression
 
-function sayHello(){
+(function (){
     console.log("hello")
-}
-
-sayHello()
+})()
