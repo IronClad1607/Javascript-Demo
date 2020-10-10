@@ -40,3 +40,26 @@ console.log(arr)
 
 arr.push(5)
 console.log(arr)
+
+
+/**
+ * scopes 
+ */
+
+ const mVar = 10
+
+ function alpha(){
+     const mVar = 11
+     if(true){
+         const mVar = 21
+
+         if(true){
+             const mVar = 33
+             console.log(mVar) //33
+         }
+         console.log(mVar) //21
+     }
+     console.log(mVar) //11
+ }
+
+ alpha()
