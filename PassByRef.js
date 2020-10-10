@@ -1,13 +1,13 @@
-var quidditchWinner = "Harry Potter"
+var quidditchWinners = ["Harry", "Ron", "Hermoine"]
 
-function changeWinner(winner){
-    console.log("Original Winner :" + winner)
-    winner = "Draco Malfoy"
-    console.log("Changed Winner :" + winner)
+function changeWinner(winners){
+   winners[0] = "Draco"
+   winners[1] = "Crabbe"
+   winners[2] = "Pansy"
 }
 
-console.log("The winner was " + quidditchWinner)
+console.log("The winner were " + quidditchWinners)
 
-changeWinner(quidditchWinner)
+changeWinner(quidditchWinners)
 
-console.log("Now the winner is " + quidditchWinner)
+console.log("Now the winner are " + quidditchWinners)
