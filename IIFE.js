@@ -25,3 +25,13 @@ if(true){
     l("root(2) = " + r(2))
     l("sin(10) = " + s(10)) 
 })(console.log,Math.pow,Math.sqrt,Math.sin)
+
+//Use of IIFE for closures
+
+for(var i=0;i<10;i++){
+   (function (j){
+    setTimeout(function (){
+        console.log(j)
+    },100)
+   }(i))
+}
