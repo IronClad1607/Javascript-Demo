@@ -20,6 +20,7 @@ function techLead(){
 
 function developer(){
     console.log("Lets develop")
+    throw new Error("The code didnt work")
 }
 
 ceo()
