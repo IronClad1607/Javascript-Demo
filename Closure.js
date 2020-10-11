@@ -10,4 +10,23 @@ function count(){
 var c= count()
 
 c()
-c()
+c() 
+
+
+function createCounter(initVal,deltaVal){
+    return {
+        up(){
+            initVal += deltaVal
+            console.log(initVal)
+        },
+        down(){
+            initVal -= deltaVal
+            console.log(initVal)
+        }
+    }
+}
+
+var a = createCounter(20,3)
+a.up()
+a.up()
+a.down()
